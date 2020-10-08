@@ -29,7 +29,7 @@ print(x.shape) # H x W x C
 plt.imshow(x)
 
 # Gray image reading
-img = imread(img_path, as_grey=True) #TypeError
+img = imread(img_path, as_gray=True) 
 img.shape # H x W x C
 img.size # multiplication of WxHxC
 type(img)
@@ -272,7 +272,7 @@ from skimage.io import imread
 from skimage.feature import blob_log # blob_dog, blob_doh
 
 #Step 2 : Import the image
-im = imread("./image_data/wint_sky.gif", as_grey=True)
+im = imread("./image_data/wint_sky.gif", as_gray=True)
 plt.imshow(im, cmap=plt.get_cmap('gray')) # cm.gray
 plt.show()
 
